@@ -12,7 +12,7 @@ public class CPF {
 		}
 	}
 	private boolean ehValido(String numero) {
-		return numero.length() == 11;
+		return (numero.length() == 11 && numero.matches("[0-9]*"));
 	}
 
 	public String getNumero() {
