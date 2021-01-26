@@ -1,4 +1,4 @@
-package escola;
+package br.com.alura.escola.aluno;
 
 public class FabricaDeAluno {
 	
@@ -15,8 +15,7 @@ public class FabricaDeAluno {
 		this.aluno.adicionarTelefone(ddd, numero);
 		return this;
 	}
-	
-	
+		
 	public Aluno criar() {
 		return this.aluno;  
 	}
