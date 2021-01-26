@@ -6,7 +6,7 @@ public class Telefone {
 	private String numero;
 	
 	public Telefone(String ddd, String numero) {
-		if (!ehValido(ddd, numero)){
+		if (ddd == null || numero == null || !ehValido(ddd, numero)){
 			throw new IllegalArgumentException("Telefone invalido!");
 		}
 		this.ddd = ddd;  
@@ -14,10 +14,9 @@ public class Telefone {
 	}
 
 	private boolean ehValido(String ddd, String numero) {
-		return ddd == null || numero == null || 
-				ddd.matches("[0-9]*") || numero.matches("[0-9]*") || 
-				ddd.length() !=3 || 
-				(numero.length()==8 || numero.length()==9);
+		return (ddd.matches("[0-9]*") && numero.matches("[0-9]*")) && 
+				(ddd.length() == 3 &&
+				(numero.length()==8 || numero.length()==9));
 	}
 
 	public String getDdd() {
