@@ -1,12 +1,12 @@
-package br.com.alura.aluno;
+package br.com.alura.dominio.aluno;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.escola.aluno.Telefone;
+import br.com.alura.escola.dominio.aluno.Telefone;
 
 class TelefoneTest {
 

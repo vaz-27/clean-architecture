@@ -1,11 +1,11 @@
-package br.com.alura.aluno;
+package br.com.alura.dominio.aluno;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.escola.aluno.Email;
+import br.com.alura.escola.dominio.aluno.Email;
 
 
 public class EmailTest {
