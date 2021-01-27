@@ -8,6 +8,9 @@ public class Aluno {
 	private CPF cpf;
 	private String nome;
 	private Email email;
+	
+	public Aluno() {
+	}
 		
 	public Aluno(CPF cpf, String nome, Email email) {
 		this.cpf = cpf;
