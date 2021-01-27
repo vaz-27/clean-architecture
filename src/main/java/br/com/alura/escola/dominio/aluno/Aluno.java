@@ -9,6 +9,10 @@ public class Aluno {
 	private String nome;
 	private Email email;
 	
+	private List<Telefone> telefones = new ArrayList<>();
+	
+	private String senha;
+	
 	public Aluno() {
 	}
 		
@@ -17,8 +21,6 @@ public class Aluno {
 		this.nome = nome;
 		this.email = email;
 	}
-
-	private List<Telefone> telefones = new ArrayList<>();
 	
 	public void adicionarTelefone(String ddd, String numero) {
 		this.telefones.add(new Telefone(ddd, numero));
@@ -38,6 +40,10 @@ public class Aluno {
 
 	public List<Telefone> getTelefone() {
 		return telefones;
+	}
+	
+	public String getSenha() {
+		return senha;
 	}
 }
 
