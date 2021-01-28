@@ -52,5 +52,10 @@ public class Aluno {
 	public String getSenha() {
 		return senha;
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + "]";
+	}
 }
 
